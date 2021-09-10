@@ -6,13 +6,14 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 21:30:06 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/04 20:11:08 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/09 13:49:47 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -34,7 +35,8 @@ int		ft_strncmp(const char *str1, const char *str2, size_t num );
 void	*ft_memchr(const void *str, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
-int 		ft_atoi(const char * str);
+int		ft_atoi(const char *str);
 int		ft_isspace(char character);
+void	*ft_calloc(size_t num, size_t size);
 
 #endif
