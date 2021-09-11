@@ -26,8 +26,8 @@ FILES = ft_isalpha.c 	\
 	        ft_isspace.c            \
 		ft_calloc.c		\
 		ft_strdup.c		\
-#		ft_memccpy.c		\
 		ft_substr.c		\
+#		ft_memccpy.c		\
 		ft_strjoin.c 	\
 		ft_strtrim.c		\
 		ft_split.c		\
