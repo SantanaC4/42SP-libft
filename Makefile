@@ -6,7 +6,7 @@
 #    By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/17 20:26:21 by edrodrig          #+#    #+#              #
-#    Updated: 2021/09/18 01:15:19 by edrodrig         ###   ########.fr        #
+#    Updated: 2021/09/18 17:30:18 by edrodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,7 @@ BONUS =		ft_lstnew.c   		\
 		ft_lstdelone.c		\
 		ft_lstclear.c		\
 		ft_lstiter.c		\
-#		ft_lstmap.c \ 
+		ft_lstmap.c 
 
 OBJFILES = $(FILES:%.c=%.o)
 OBJFILES_BONUS = $(BONUS:%.c=%.o)
