@@ -6,7 +6,7 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/11 20:46:18 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/11 21:02:58 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/18 16:17:01 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*n;
 
+	if (!s1 || !s2)
+		return (NULL);
 	n = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (n == NULL)
 		return (NULL);
 	ft_memcpy(n, s1, ft_strlen(s1));
-	ft_memcpy(n + ft_strlen(s1), s2, ft_strlen(s2));
-	n[ft_strlen(s1) + ft_strlen(s2) + 1] = '\0';
+	ft_strlcpy(n + ft_strlen(s1), s2, ft_strlen(s2) + 1);
 	return (n);
 }
