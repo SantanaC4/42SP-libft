@@ -6,7 +6,7 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 23:03:23 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/18 13:58:44 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/18 14:04:31 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		len = new_len;
 	if (!(n = malloc((len + 1) * sizeof(char))))
 		return (NULL);
-	ft_memcpy(n, s + start, len);
-	n[len + 1] = '\0';
+	ft_strlcpy(n, s + start, len + 1);
 	return (n);
 }
