@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/16 23:29:39 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/17 19:54:56 by edrodrig         ###   ########.fr       */
+/*   Created: 2021/09/18 01:17:48 by edrodrig          #+#    #+#             */
+/*   Updated: 2021/09/18 01:44:39 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+
 }

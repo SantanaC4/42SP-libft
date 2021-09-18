@@ -1,5 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/09/17 20:26:21 by edrodrig          #+#    #+#              #
+#    Updated: 2021/09/18 01:15:19 by edrodrig         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+
 NAME = libft.a
 CFLAGS = -Wall -Werror -Wextra -I. -c
+CFLAGS_BONUS = -Wall -Werror -Wextra -I $(HEADERFILES) -c
 CC = clang
 HEADERFILES = libft.h 
 FILES = ft_isalpha.c 	\
@@ -35,11 +49,21 @@ FILES = ft_isalpha.c 	\
 		ft_putchar_fd.c        	\
 		ft_putstr_fd.c		\
 		ft_strmapi.c		\
-		ft_putendl_fd.c	\
-#		ft_memccpy.c		\
-		ft_putnbr_fd.c
+		ft_putendl_fd.c		\
+		ft_putnbr_fd.c 
+
+BONUS =		ft_lstnew.c   		\
+		ft_lstadd_front.c	\
+		ft_lstsize.c		\
+		ft_lstlast.c		\
+		ft_lstadd_back.c	\
+		ft_lstdelone.c		\
+		ft_lstclear.c		\
+		ft_lstiter.c		\
+#		ft_lstmap.c \ 
 
 OBJFILES = $(FILES:%.c=%.o)
+OBJFILES_BONUS = $(BONUS:%.c=%.o)
 
 all: $(NAME) 
 
@@ -49,13 +73,18 @@ $(NAME): $(OBJFILES)
 $(OBJFILES): $(FILES)
 	$(CC) $(CFLAGS) $^
 
+$(OBJFILES_BONUS): $(BONUS)
+	$(CC) $(CFLAGS_BONUS) $^
 clean:
 	rm -f $(OBJFILES)
+	rm -f $(OBJFILES_BONUS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
+bonus: $(OBJFILES_BONUS)
+	ar rcs $(NAME) $(OBJFILES_BONUS)
 
-.PHONY: clean fclean all re
+.PHONY: clean fclean all re bonus
