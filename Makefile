@@ -6,7 +6,7 @@
 #    By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/17 20:26:21 by edrodrig          #+#    #+#              #
-#    Updated: 2021/09/19 21:49:17 by edrodrig         ###   ########.fr        #
+#    Updated: 2021/09/19 22:05:15 by edrodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ OBJFILES_BONUS = $(BONUS:%.c=%.o)
 all: $(NAME) 
 
 $(NAME): $(OBJFILES)
-	ar rcs $@ $^
+	ar rcs $(NAME) $^
 	
 $(OBJFILES): $(FILES)
 	$(CC) $(CFLAGS) $^
