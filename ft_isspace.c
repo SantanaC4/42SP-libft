@@ -6,11 +6,11 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 20:01:08 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/04 20:10:17 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/19 19:37:26 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isspace(char c)
 {

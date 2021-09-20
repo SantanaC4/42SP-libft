@@ -6,11 +6,11 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 21:50:54 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/09 22:53:08 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/19 21:10:59 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

@@ -6,11 +6,11 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 15:46:12 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/10 19:17:24 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/19 21:09:31 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *str1, const char *str2, size_t num )
 {

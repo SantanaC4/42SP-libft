@@ -6,11 +6,11 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 23:13:08 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/16 23:28:46 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/19 19:36:37 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<libft.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

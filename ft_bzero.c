@@ -6,11 +6,11 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 10:50:08 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/08/31 21:31:17 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/19 21:09:47 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

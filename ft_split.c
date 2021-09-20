@@ -6,11 +6,11 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/11 22:18:12 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/14 05:20:01 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/19 19:41:37 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static int	count_words(char const *s, char c)
 {

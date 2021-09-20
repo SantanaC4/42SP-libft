@@ -6,11 +6,11 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 15:26:42 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/11 11:18:39 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/19 19:46:10 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {

@@ -6,15 +6,15 @@
 #    By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/17 20:26:21 by edrodrig          #+#    #+#              #
-#    Updated: 2021/09/18 17:30:18 by edrodrig         ###   ########.fr        #
+#    Updated: 2021/09/19 21:49:17 by edrodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
 NAME = libft.a
-CFLAGS = -Wall -Werror -Wextra -I. -c
+CFLAGS = -Wall -Werror -Wextra -c
 CFLAGS_BONUS = -Wall -Werror -Wextra -I $(HEADERFILES) -c
-CC = clang
+CC = gcc
+CC_BONUS = clang
 HEADERFILES = libft.h 
 FILES = ft_isalpha.c 	\
 		ft_isdigit.c		\
@@ -74,7 +74,7 @@ $(OBJFILES): $(FILES)
 	$(CC) $(CFLAGS) $^
 
 $(OBJFILES_BONUS): $(BONUS)
-	$(CC) $(CFLAGS_BONUS) $^
+	$(CC_BONUS) $(CFLAGS_BONUS) $^
 clean:
 	rm -f $(OBJFILES)
 	rm -f $(OBJFILES_BONUS)

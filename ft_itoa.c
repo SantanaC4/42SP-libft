@@ -6,11 +6,11 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 05:20:39 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/09/14 23:34:30 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/09/19 19:37:52 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static void	create_str(char *str, unsigned int n, long int len)
 {
